@@ -11,7 +11,6 @@ body {
     background-image: url(../img/movie-the-conjuring-wallpaper-preview.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
@@ -48,7 +47,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin-top: 120px;
-    padding-top: 110px;
+    padding-top: 120px;
 }
 
 .iniciar-juego, .agregar-palabra{
@@ -97,4 +96,35 @@ footer {
 
 .imgRedes:hover {
     transform: scale(1.0);
+}
+
+/*Parte del juego*/
+
+.centrar{
+    width: 50%;
+    max-width: 800px;
+}
+
+#pantalla{
+    border: groove 8px rgba(8, 1, 1, 0.959);
+    background: rgba(100, 103, 105, 0.288);   
+    border-radius: 24px;
+    margin: 0 100px;
+}
+
+.boton-juego{
+    display: inline;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 20%;
+    font-size: 18px;
+    font-family: 'Grenze Gotisch', cursive;
+    color: rgb(255, 255, 255);
+    border: 2px groove rgb(255, 255, 255);
+    border-radius: 24px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    margin: 8px 0 3px 260px;
 }
