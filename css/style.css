@@ -46,12 +46,12 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
-    padding-top: 120px;
+    margin-top: 200px;
+    padding-top: 150px;
 }
 
 .iniciar-juego, .agregar-palabra{
-    padding: 30px;
+    padding: 35px;
     background-color: rgba(0, 0, 0, 0.836);
     width: 25%;
     font-size: 18px;
@@ -72,7 +72,7 @@ button:hover {
 
 footer {
     display: flex;
-    padding: 0.2em 0;
+    padding: 0.3em 0;
     background-color: rgba(0, 0, 0, 0.7);
     border-top: 1px solid rgba(15, 15, 15);
     border-bottom: 1px solid rgb(15, 15, 15);
@@ -109,12 +109,12 @@ footer {
     border: groove 8px rgba(8, 1, 1, 0.959);
     background: rgba(100, 103, 105, 0.288);   
     border-radius: 24px;
-    margin: 0 100px;
+    margin: 0 180px;
 }
 
 .boton-juego{
     display: inline;
-    padding: 16px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.836);
     width: 20%;
     font-size: 18px;
@@ -126,5 +126,5 @@ footer {
     text-transform: uppercase;
     text-align: center;
     align-items: center;
-    margin: 8px 0 3px 260px;
+    margin: 18px 0 16px 300px;
 }
