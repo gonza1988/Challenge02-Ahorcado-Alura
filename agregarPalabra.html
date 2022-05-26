@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jugando</title>
+    <title>Agregar Palabra</title>
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,25 +17,24 @@
 </head>
 
 <body>
-
     <header>
         <div class="contenedor">
             <div class="header_img">
                 <img src="./img/logo.svg" alt="Logo de Alura">
                 <h1>Juego del Ahorcado</h1>
-                <h2>Jugando...</h2>
+                <h2>Agregar Palabra</h2>
             </div>
         </div>
     </header>
+
     <div class="centrar">
         <canvas id="pantalla" width="1200px" height="450px">
             <!-- etiqueta del canvas con sus medidas en la pantalla -->
             
         </canvas>
     </div>
-    <!-- El boton que nos sirve para recargar la pagina y asi generar una nueva palabra y volver a jugar -->
-    <button class="boton-juego" id="reset-game" type="reset" onclick="javascript:window.location.reload();">Volver a
-        Jugar</button>
+
+    <button class="boton-juego" id="reset-game" type="reset" onclick="location.href='./juego.html'">Insertar Palabra</button>
     <button class="boton-juego" id="volver-atras" onclick="location.href='./index.html'">Volver al inicio</button>
 
     <footer>
@@ -51,6 +50,7 @@
     </footer>
 </body>
 
-    <script src="./js/escenario.js"></script>
-    <script src="./js/logica.js"></script>
+<script src="./js/escenario.js"></script>
+<script src="./js/logica.js"></script>
+
 </html>

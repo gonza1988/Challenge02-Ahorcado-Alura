@@ -42,12 +42,24 @@ h1 {
     color: rgba(0, 0, 0, 0.836);
 }
 
+h2 {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 4px;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    color: rgba(182, 10, 10, 0.903);
+}
+
 .botones-inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
-    padding-top: 150px;
+    margin-top: 160px;
+    padding-top: 130px;
 }
 
 .iniciar-juego, .agregar-palabra{
@@ -114,7 +126,7 @@ footer {
 
 .boton-juego{
     display: inline;
-    padding: 20px;
+    padding: 17px;
     background-color: rgba(0, 0, 0, 0.836);
     width: 20%;
     font-size: 18px;

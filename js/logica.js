@@ -7,7 +7,7 @@ function pintaPalabra() {
     var len = palabra.length;
     var ren = 0;
     var col = 0;
-    var y = 180;
+    var y = 160;
     var lon = 50;
     var x = (w - (lon + margen) * len) / 4;
     for (var i = 0; i < palabra.length; i++) {
@@ -28,13 +28,13 @@ function horca(errores) {
     imagen.src = "img/enfermera" + errores + ".png";
     imagen2.src = "img/muerte.png";
     imagen.onload = function () {
-        ctx.drawImage(imagen, 908, 110, 230, 230);
+        ctx.drawImage(imagen, 908, 57, 230, 230);
 
         if(errores==4){
             ctx.fillText("¡Ultimo intento!", 420, 100);
         }
         if (errores == 5) {
-            ctx.drawImage(imagen2, 1010, 110, 230, 230);
+            ctx.drawImage(imagen2, 1010, 90, 230, 230);
         }
 
     }

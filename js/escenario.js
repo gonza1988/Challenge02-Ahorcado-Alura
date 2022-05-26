@@ -6,7 +6,7 @@
                 var colorTecla = "rgba(0, 0, 0, 0.836)";
                 var colorMargen = "white";
                 var inicioX = 200;
-                var inicioY = 290;
+                var inicioY = 260;
                 var lon = 48;
                 var margen = 25;
                 var pistaText = "";
