@@ -14,30 +14,24 @@
                 /* Arreglos */
                 var teclas_array = new Array();
                 var letras_array = new Array();
-                var palabras_array = new Array();
+               /* var palabras_array = new Array();*/
 
                 /* Variables de control */
                 var aciertos = 0;
                 var errores = 0;
                 
                 /* Palabras */
-                palabras_array.push("LEON");
-                palabras_array.push("CABALLO");
-                palabras_array.push("PERRO");
-                palabras_array.push("ERIZO");
-                palabras_array.push("JIRAFA");
-                palabras_array.push("GATO");
-                palabras_array.push("LAGARTIJA");
-                palabras_array.push("RINOCERONTE");
-                palabras_array.push("TIBURON");
-                palabras_array.push("CARACOL");
-                palabras_array.push("ALACRAN");
-                palabras_array.push("ARAÑA");
-                palabras_array.push("AVESTRUZ");
-                palabras_array.push("OCELOTE");
-                palabras_array.push("MUSARAÑA");
-                palabras_array.push("AGUILA");
+               
+                var palabras_array = [ "GATO","PERRO","LEON","CABALLO","BALLENA","TIBURON","ELEFANTE","TUCAN","ERIZO","CONEJO","TIGRE","CONDOR","CEBRA","COCODRILO"];
                         
+                function llamardatosstg() {
+                    var palabranueva = sessionStorage.getItem("palabraNueva");
+                    return palabranueva;
+                }
+
+                var palabraaingresar = llamardatosstg();
+                palabras_array.push(palabraaingresar);
+
                 /* Objetos */
                 function Tecla(x, y, ancho, alto, letra){
                     this.x = x;

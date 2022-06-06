@@ -1,7 +1,13 @@
+/*var palabraaingresar = llamardatosstg();
+
+palabras_array.push(palabraaingresar); */
+
 /* aqui obtenemos nuestra palabra aleatoriamente y la dividimos en letras */
 function pintaPalabra() {
     var p = Math.floor(Math.random() * palabras_array.length);
     palabra = palabras_array[p];
+    console.log(palabra);
+    console.log(palabras_array);
 
     var w = canvas.width;
     var len = palabra.length;
@@ -38,14 +44,7 @@ function horca(errores) {
         }
 
     }
-    /*************************************************
-    // Imagen 2 mas pequeña a un lado de la horca //       
-    var imagen = new Image();
-    imagen.src = "imagenes/ahorcado"+errores+".png";
-    imagen.onload = function(){
-        ctx.drawImage(imagen, 620, 0, 100, 100);
-    }
-    *************************************************/
+
 }
 
 /* ajustar coordenadas */
@@ -113,7 +112,7 @@ function gameOver(errores) {
     horca(errores);
 }
 
-/* Detectar si se a cargado nuestro contexco en el canvas, iniciamos las funciones necesarias para jugar o se le manda msj de error segun sea el caso */
+/* Detectar si se a cargado nuestro contexto en el canvas, iniciamos las funciones necesarias para jugar o se le manda msj de error segun sea el caso */
 window.onload = function () {
     canvas = document.getElementById("pantalla");
     if (canvas && canvas.getContext) {
@@ -128,3 +127,4 @@ window.onload = function () {
         }
     }
 }
+

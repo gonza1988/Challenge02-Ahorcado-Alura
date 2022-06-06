@@ -27,15 +27,32 @@
         </div>
     </header>
 
-    <div class="centrar">
-        <canvas id="pantalla" width="1200px" height="450px">
-            <!-- etiqueta del canvas con sus medidas en la pantalla -->
-            
-        </canvas>
-    </div>
+    <main class="espaciosdecontenidos">
 
-    <button class="boton-juego" id="reset-game" type="reset" onclick="location.href='./juego.html'">Insertar Palabra</button>
-    <button class="boton-juego" id="volver-atras" onclick="location.href='./index.html'">Volver al inicio</button>
+        <textarea id="ingresarpalabra" placeholder="Ingrese una palabra"></textarea>
+
+        <section id="botonespalabra">
+
+            <div class="espacioerrores">
+                <p class="invisible" id="textoconnumeros">No se admiten numeros en el juego</p>
+                <p class="invisible" id="masdeocho">La palabra no puede tener más de 8 letras</p>
+                <p class="invisible" id="menosdeuno">No se permiten valores vacíos</p>
+                <p class="invisible" id="noacentos">No se permiten letras con acentos ni caracteres especiales</p>
+            </div>
+
+            <div id="contenedoralerta">
+                <img class="imgalert" src="./img/Alerta.svg" alt="Simbolo de alerta">
+                <p class="textalert">Máx. de 8 letras </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <button class="boton-juego" id="Btnsave">Guardar</button>
+
+    <button class="boton-juego" id="Btncancelar" onclick="location.href='./index.html'">Volver al inicio</button>
+
 
     <footer>
         <div class="copyright">
@@ -50,7 +67,6 @@
     </footer>
 </body>
 
-<script src="./js/escenario.js"></script>
-<script src="./js/logica.js"></script>
+<script src="./js/nuevaPalabra.js"></script>
 
 </html>

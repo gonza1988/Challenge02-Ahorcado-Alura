@@ -140,3 +140,61 @@ footer {
     align-items: center;
     margin: 18px 0 16px 300px;
 }
+
+/* Sección Agregar Palabra */
+
+.espaciosdecontenidos{
+    width: 40%;
+    margin: 40px auto 20px auto;
+}
+
+
+#ingresarpalabra{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    height: 365px;
+    width: 80%;
+    outline-style: none;
+    border-style: none;
+    color: rgba(0, 0, 0, 0.836);
+    background: none;
+    resize: none;
+    margin: 5px 0 5px 0;
+}
+
+#ingresarpalabra::placeholder{
+    color: rgba(0, 0, 0, 0.836);
+    opacity: 70%;
+}
+
+.espacioerrores{
+    margin-bottom: 10px;
+    color: rgb(182, 21, 10);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+#contenedoralerta{
+    display: flex;
+    margin: 10px 0;
+}
+
+.imgalert{
+    width: 15px;
+    opacity: 70%;
+}
+
+.textalert{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 7px;
+    color: black;
+}
+
+.invisible{
+    display: none;
+}
