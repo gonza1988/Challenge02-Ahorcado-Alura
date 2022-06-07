@@ -4,10 +4,10 @@ palabras_array.push(palabraaingresar); */
 
 /* aqui obtenemos nuestra palabra aleatoriamente y la dividimos en letras */
 function pintaPalabra() {
-    var p = Math.floor(Math.random() * palabras_array.length);
-    palabra = palabras_array[p];
+    var p = Math.floor(Math.random() * palabras.length);
+    palabra = palabras[p];
     console.log(palabra);
-    console.log(palabras_array);
+    console.log(palabras);
 
     var w = canvas.width;
     var len = palabra.length;
