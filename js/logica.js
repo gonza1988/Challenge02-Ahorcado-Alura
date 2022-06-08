@@ -2,6 +2,9 @@
 
 palabras_array.push(palabraaingresar); */
 
+var palabras = localStorage.getItem('myArray');
+palabras = JSON.parse(palabras);
+
 /* aqui obtenemos nuestra palabra aleatoriamente y la dividimos en letras */
 function pintaPalabra() {
     var p = Math.floor(Math.random() * palabras.length);

@@ -34,8 +34,8 @@ var errores = 0;
  var palabraaingresar = llamardatosstg();
  palabras_array.push(palabraaingresar); */
 
-var palabras = localStorage.getItem('myArray');
-palabras = JSON.parse(palabras);
+/* Variablesvar palabras = localStorage.getItem('myArray');
+palabras = JSON.parse(palabras);*/
 
 /* Objetos */
 function Tecla(x, y, ancho, alto, letra) {
