@@ -14,6 +14,7 @@ let noacentos = ["Á", "É", "Í", "Ó", "Ú", "Ñ"];
 
 var palabras = localStorage.getItem('myArray');
 palabras = JSON.parse(palabras);
+console.log(palabras);
 
 botonguardarpalabra.addEventListener("click", function () {
 
